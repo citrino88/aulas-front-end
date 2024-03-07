@@ -28,6 +28,10 @@ Em geral, CSS serve para:
 
 O CSS é aplicado diretamente em cada tag HTML.
 
+- style= [text-align] : (center)
+- atributo = [propriedade]: (valor)
+- Exemplos de propriedades: text-align; color (red, blue...); font-family (Verdana...); background-color; background-image: linear-gradient(silver, blue); background-size: cover; background-attachment: fixed;
+
 #### Interna/Onpage
 
 O CSS é criado usando regras (com seletores, propriedades, valores) dentro da própria página que queremos formatar.
