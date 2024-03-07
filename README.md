@@ -7,6 +7,10 @@
 
 ## HTML
 
+- Estruturação
+- Semântica
+- Padrões Web
+
 ## CSS
 
 Linguagem de estilização que "casa" com elementos HTML.
@@ -22,9 +26,17 @@ Em geral, CSS serve para:
 
 #### Inline
 
+O CSS é aplicado diretamente em cada tag HTML.
+
 #### Interna/Onpage
 
+O CSS é criado usando regras (com seletores, propriedades, valores) dentro da própria página que queremos formatar.
+
+As regras vão valer para todos os elementos/tags desta página.
+
 #### Externa
+
+É criado um arquivo de extensão CSS dedicado às regras de formatação. Este arquivo é então "conectado" às páginas HTML.
 
 ## JS
 
