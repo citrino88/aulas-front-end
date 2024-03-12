@@ -5,13 +5,60 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+
 div {
-    background-color: rgba(255, 255, 255, 0.40
-    );
+    background-color: rgba(255, 255, 255, 0.50);
     width: 70%;
     margin: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    /* padding é o espaçamento interno */
+    padding: 10px;
+    /* sombra precisa de quatro valores
+    1 é cor, 2 é distância na horizontal, 3 é distancia na vertical, 4 é o esfumaçado da sombra */
+    box-shadow: rgba(237, 230, 3, 0.804) 20px 10px 30px, purple -20px -10px 30px;
 }
+
 /* Tornando as imagens flexíveis/responsivas */
-img{
+img {
     max-width: 100%;
 }
+
+figure {
+    text-align: center;
+}
+
+h1 {
+    font-family: Impact, Verdana, Arial, sans-serif;
+    background-color: rgb(0, 0, 141, 0.75);
+    color: rgb(235, 242, 245);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* Versão abreviada: border-radius: 20px 20px 0 0 */
+    text-shadow: yellow 5px 5px 2px;
+    -webkit-text-stroke: purple 0.5px;
+}
+h2{
+    font-size: 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-left-style: solid;
+    border-left-width: 20px;
+    /* margin-left: 30px; vai empurrar mais  */
+    padding-left: 10px;
+}
+
+/* EXERCÍCIO
+ Crie uma nova regra CSS para estilizar o elemento h1 com as seguintes características:
+- Fonte: Impact, Verdana, Arial e sans-serif
+- Cor de fundo: escuro com um pouco de transparência
+- Cor de texto: clara
+- Espaçamento: interno APENAS para cima e para baixo
+- Letras maiúsculas
+- Texto alinhado no meio
+- Bordas arredondadas APENAS nos cantos superiores
+- Sombra no TEXTO*/
