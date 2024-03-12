@@ -1,0 +1,11 @@
+/* Arquivo exclusivo para regras e recursos da linguagem CSS */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: beige;
+    color: brown;
+}
+hr{
+    height: 10px;
+    background-color: rgb(63, 22, 22);
+    border: none;
+}
