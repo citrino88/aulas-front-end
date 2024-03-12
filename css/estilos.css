@@ -1,0 +1,17 @@
+/* O que vamos fazer/escrever aqui? REGRAS DE FORMATAÇÃO */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../imagens/tarde.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+div {
+    background-color: rgba(255, 255, 255, 0.40
+    );
+    width: 70%;
+    margin: auto;
+}
+/* Tornando as imagens flexíveis/responsivas */
+img{
+    max-width: 100%;
+}
