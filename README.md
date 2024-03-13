@@ -48,6 +48,7 @@ seletor {
     propriedade2: valor;
     propriedadeN: valor;
 }
+```
 
 Exemplos:
 p {text-align: right; }
