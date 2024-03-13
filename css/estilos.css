@@ -33,6 +33,7 @@ figure {
 }
 
 h1 {
+    margin: 0;
     font-family: Impact, Verdana, Arial, sans-serif;
     background-color: rgb(0, 0, 141, 0.75);
     color: rgb(235, 242, 245);
@@ -130,7 +131,15 @@ nav a {
     /*border: solid 1px;*/
 }
 /* Regra para o estado de acionamento dos links */
-nav a:hover{
+/* nav a:focus regras para acessibilidade por mudança via TAB e ou shift+tab para voltar (navegar e celular) */
+nav a:hover, nav a:focus {
     background-color: black;
     color: antiquewhite;    
+}
+/* Pseudos-classes baixo: */
+nav a:first-child{
+    border-bottom-left-radius: 8px;
+}
+nav a:last-child{
+    border-bottom-right-radius: 8px ;
 }
