@@ -85,3 +85,22 @@ figure img:hover {
     transform: scale(1) rotateX(360deg);
     filter: grayscale(0);
 }
+
+/* Seletor AGRUPADO (grupo de seletores) */
+p, li{
+    font-size: 18px;
+}
+
+/* li{ font-size: 18px;} */
+
+/* Seletor CLASSE */
+.centralizar { text-align: center;} /* Usar nomes significativos */
+.sombra { text-shadow: pink 1px 1px 3px; }
+.destaque { 
+    background-color: black;
+    color: white;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+p b { color: purple}
