@@ -57,6 +57,19 @@ img {border-radius: 8px; }
 
 É criado um arquivo de extensão CSS dedicado às regras de formatação. Este arquivo é então "conectado" às páginas HTML.
 
+### Tipos de seletor
+- TAG: seletor mais abrangente/generalista, casa com elementos HTML de acordo com a tag especificado.
+
+- DESCENDENTE: seletor, mais específico, casa com elementos que são filhos (descendentes) de outro elemento. Usa-se espaço para separar o filho/pai.
+
+- AGRUPADO: grupo de seletores que compartilham uma mesma formatação. Usa-se vírgula para separar os seletores.
+
+- PSEUDO-CLASSE: classes "pré-prontas/nativas" da linguagem que podem ser aplicadas em diversas situações. Exemplos: passar mouse, reconhecer foco, selecionar determinados elementos etc. TODAS pseudo-classes começam com dois-pontos :
+
+- CLASSE: seletor versátil que permite a aplicação de estilos em diversos elementos, possibilitando também a combinação de diferentes classes. No CSS usa-se .nome-da-classe para criar a classe, e no HTML usa-se o atributo class="nome da classe" para aplicar a classe.
+
+- IDENTIFICADO: seletor bastante restrito (o mesmo id só pode ser usado em um elemento por página), permitindo criar uma estilização altamente específica. No CSS usa-se #nome-do-id para criar, e no HTML usa-se o atributo id="nome-do-id" para aplicar.
+
 ## JS
 
 1. primeiro elemento da lista ordenada.
