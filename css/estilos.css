@@ -1,4 +1,8 @@
 /* O que vamos fazer/escrever aqui? REGRAS DE FORMATAÇÃO */
+/* Seletor UNIVERSAL
+Alterando o comportamento do Box Model CSS. Usando esta regra evitamos os problemas encontrados ao se usar width, height, padding e border ao mesmo tempo. */
+* { box-sizing: border-box; } /* propriedade importante */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(../imagens/tarde.jpg);
@@ -68,11 +72,6 @@ h2{
 
 a { text-decoration: none; } /* tira todos os UNDERLINES dos links dentro do a */
 
-/* Seletor DESCENDENTE
-(vale para todos os <a> CONTIDOS em <nav>) */
-
-nav a { color: black;}
-
 figure img {
     transform: scale(0.8); /* usando só 80% do tamanho da imagem */
     transition: 1s;
@@ -110,3 +109,28 @@ p, li{
 }
 
 p b { color: purple}
+
+/**** Regras para o menu e seus links ****/
+
+nav { text-align: center;}
+
+/* Seletor DESCENDENTE
+(vale para todos os <a> CONTIDOS em <nav>) */
+
+nav a { 
+    color: black;
+    font-weight: bold;
+    background-color: antiquewhite;
+    display: inline-block;
+    /*padding-block: 10%; pode usar essa solução*/
+    /* border-radius: 8px; */
+    width: 50%;
+    padding: 2%;
+    transition: 3s;
+    /*border: solid 1px;*/
+}
+/* Regra para o estado de acionamento dos links */
+nav a:hover{
+    background-color: black;
+    color: antiquewhite;    
+}
