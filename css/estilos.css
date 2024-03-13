@@ -41,6 +41,9 @@ h1 {
     /* Versão abreviada: border-radius: 20px 20px 0 0 */
     text-shadow: yellow 5px 5px 2px;
     -webkit-text-stroke: purple 0.5px;
+    /* Propriedades com prefixo 
+    -webkit-*, -moz-*, -o-* 
+    Site Can I use: site de verificação de compatibilidade web */
 }
 h2{
     font-size: 20px;
@@ -62,3 +65,23 @@ h2{
 - Texto alinhado no meio
 - Bordas arredondadas APENAS nos cantos superiores
 - Sombra no TEXTO*/
+
+a { text-decoration: none; } /* tira todos os UNDERLINES dos links dentro do a */
+
+/* Seletor DESCENDENTE
+(vale para todos os <a> CONTIDOS em <nav>) */
+
+nav a { color: black;}
+
+figure img {
+    transform: scale(0.8); /* usando só 80% do tamanho da imagem */
+    transition: 1s;
+    filter: grayscale(100%);
+}
+
+/* Usando a pseudo-classe :hover
+(ação de passar o mouse) */
+figure img:hover {
+    transform: scale(1) rotateX(360deg);
+    filter: grayscale(0);
+}
