@@ -143,3 +143,52 @@ nav a:first-child{
 nav a:last-child{
     border-bottom-right-radius: 8px ;
 }
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+
+}
+ul li{
+    color: red;
+    list-style-type: square;
+}
+
+/* pseudo elemento: quanto tem 2 ::  igual abaixo 
+Seletor pseudo-elemento ::marker para alterar o contéudo do marcador da lista*/
+
+ul li::marker {
+    content: " 👻 "; /* apertar windows+. (ponto final) */
+    font-size: 24px;
+    color: blue;
+    font-weight: bold;
+}
+
+ul li:first-child { font-weight: bold;}
+ul li:last-child { font-style: italic;}
+ul li:nth-child(3) {color: purple;} /* quando quero pegar o n-ésimo filho 2º, 3º....15 */
+
+/* Cores alternadas */
+ul li:nth-child(even) { background: pink;}
+ul li:nth-child(odd) { background: lightblue;}
+
+details {
+    border: solid 2px;
+    padding: 8px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+summary::marker { content: "😑 ";
+}
+
+/* Seletor de ATRIBUTO 
+Somente quando o details estiver com o atributo open (portanto, quando ele é acionado), faremos a troca do marcador/emoji. 
+Observação não dever haver espaçamento senão dá erro e vira o tipo descendente.*/
+details[open] summary::marker { 
+    content: "😍 "
+}
