@@ -26,15 +26,24 @@
 
 		#exemplo-flexbox {
 			width: 80%;
-			height: 600px; /* quando coloca isso ele estica as outras caixas */
+			height: 1000px; /* quando coloca isso ele estica as outras caixas */
 			margin: auto;
 			background-color: lightsalmon;
 			
 			/* Habilitando o Flexbox */
 			display: flex;
+
+			/* justify-content
+			Em direção padrão "row", se comporta como alinhamento horizontal.
+
+			Se estiver na direção "column", se comporta como alinhamento vertical. */
 			justify-content: space-between;
-			/* align-items: flex-start; */
+
+			/* align-itens: flex-start; e vários outros valores interessantes, para dispor as caixas*/
+			/* align-itens funciona de forma contrária. Ou seja, em modo "row" alinha verticamente. Em modo "column", alinha horizontalmente. */
 			align-items: center;
+			/* flex-direction: row; em linha*/
+			flex-direction: column; /* row padrão */
 
 
 		}
