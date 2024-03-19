@@ -190,5 +190,5 @@ summary::marker { content: "😑 ";
 Somente quando o details estiver com o atributo open (portanto, quando ele é acionado), faremos a troca do marcador/emoji. 
 Observação não dever haver espaçamento senão dá erro e vira o tipo descendente.*/
 details[open] summary::marker { 
-    content: "😍 "
+    content: "😍 ";
 }
