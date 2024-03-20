@@ -35,6 +35,17 @@
         /* Etapa 2:
         Regras de uso condicional, ou seja, estilos que vão ser aplicados de acordo com determinadas condições (tamanhos de tela). */
 
+        /* Media Queries (Consultas de Mídia) e Breakpoints (pontos de adaptação)*/
+
+        /* curiosidades: @media print (imprimir o site sem cores) */
+        /* exemplo abaixo: para telas acima de 600px(computadores, entre outros), ie, com no mínimo 600px, o site fica responsivo e se adapta para atender a este novo tipo de dispositivo, ai abaixo pode colocar outros Estilos de CSS para atender a estes tipos de telas maiores*/
+        @media screen and (min-width: 600px){
+            body {background-color: yellow; }
+            h1 { text-align: center; 
+            font-size: 28px;}
+        }
+
+        
 
     </style>
 </head>
