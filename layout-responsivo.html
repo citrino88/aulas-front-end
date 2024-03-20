@@ -5,6 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Responsivo</title>
+    <style>
+        *{ box-sizing: border-box;}
+        /* 1) Regras de uso geral (regras comuns) */
+        body {
+            background-color: darkgray;
+            font-family: Verdana;
+        }
+        .container {
+            background-color: lightgray;
+            padding: 5px;
+            box-shadow: black 0 0 5px;
+        }
+
+        /* Regras de reset CSS
+        É COMUM resetar valores de alguns elementos/propriedades visando evitar inconsistências nos resultados. */
+
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2, p, .topo { padding: 4px; }
+
+        /* obs: professor colocou abaixo no .topo o padding: 4px; , ficar atento se pudar posteriormente */
+        .topo {background-color: lightcoral;}
+        h1 {background-color: lightcyan;}
+        .menu {background-color: lightgreen;}
+
+        .conteudo {background-color: #fff;}
+        
+        .um, .dois, .tres { border: solid 1px black;}
+        .um {background-color: lightyellow;}
+        .dois {background-color: orange;}
+        .tres {background-color:lime;}
+
+        .rodape {background-color: lightskyblue;}
+        /* 2) Regras de uso condicional (COM MEDIA QUERIES) */
+        @media screen and (min-width: 540px) {
+                        
+        }
+
+    </style>
 </head>
 
 <body>
@@ -31,7 +73,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ea deserunt, sed, excepturi perferendis eum, ut officia officiis labore molestiae tempore odio praesentium aliquid doloribus? Quos fuga laboriosam consequuntur commodi.</p>
             </article>
         </main>
-        <footer>
+        <footer class="rodape">
             <h2>Rodapé</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, quos!</p>
         </footer>
