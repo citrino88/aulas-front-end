@@ -12,12 +12,12 @@
 
         /* 1) Regras de uso geral (regras comuns) */
         body {
-            background-color: darkgray;
+            background-color: black;
             font-family: Verdana;
         }
 
         .container {
-            background-color: lightgray;
+            background-color: yellow;
             padding: 5px;
             box-shadow: black 0 0 5px;
         }
@@ -54,6 +54,7 @@
 
         .conteudo {
             background-color: #fff;
+            padding: 4px;
         }
 
         .um,
@@ -119,6 +120,32 @@
             .tres {
                 width: 100%;
                 margin-top: 1%;
+            }
+        }
+
+        @media screen and (min-width: 950px){
+            .topo {
+                height: 100px;
+            }
+
+            h1 {
+                font-size: 40px;
+                display: flex;
+                align-items: center;
+            }
+            .menu a { font-size: 22px;}
+
+            /* Desabilitando a "quebra/wrap" pq é ela que colocou as caixas para se organizarem abaixo */
+            .conteudo { flex-wrap: nowrap }
+
+            .um, .dois, .tres {
+                width: 33%;
+                margin: 0;                
+            }
+            /* outra solução é .tres { margin-top: 0; }, pois a alteção só tinha sido realizada na media querie anterior, para dar espaçamento nas caixas superiores. */
+            .container{
+                margin: auto;
+                max-width: 1300px;
             }
         }
     </style>
