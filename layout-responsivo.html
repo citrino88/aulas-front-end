@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Responsivo</title>
     <style>
-        *{ box-sizing: border-box;}
+        * {
+            box-sizing: border-box;
+        }
+
         /* 1) Regras de uso geral (regras comuns) */
         body {
             background-color: darkgray;
             font-family: Verdana;
         }
+
         .container {
             background-color: lightgray;
             padding: 5px;
@@ -21,53 +25,102 @@
         /* Regras de reset CSS
         É COMUM resetar valores de alguns elementos/propriedades visando evitar inconsistências nos resultados. */
 
-        body, h1, h2, p {
+        body,
+        h1,
+        h2,
+        p {
             margin: 0;
             padding: 0;
         }
 
-        h2, p, .topo { padding: 4px; }
+        h2,
+        p,
+        .topo {
+            padding: 4px;
+        }
 
         /* obs: professor colocou abaixo no .topo o padding: 4px; , ficar atento se pudar posteriormente */
-        .topo {background-color: lightcoral;}
-        h1 {background-color: lightcyan;}
-        .menu {background-color: lightgreen;}
+        .topo {
+            background-color: lightcoral;
+        }
 
-        .conteudo {background-color: #fff;}
-        
-        .um, .dois, .tres { border: solid 1px black;}
-        .um {background-color: lightyellow;}
-        .dois {background-color: orange;}
-        .tres {background-color:lime;}
+        h1 {
+            background-color: lightcyan;
+        }
 
-        .rodape {background-color: lightskyblue;}
+        .menu {
+            background-color: lightgreen;
+        }
+
+        .conteudo {
+            background-color: #fff;
+        }
+
+        .um,
+        .dois,
+        .tres {
+            border: solid 1px black;
+        }
+
+        .um {
+            background-color: lightyellow;
+        }
+
+        .dois {
+            background-color: orange;
+        }
+
+        .tres {
+            background-color: lime;
+        }
+
+        .rodape {
+            background-color: lightskyblue;
+        }
+
         /* 2) Regras de uso condicional (COM MEDIA QUERIES) */
         @media screen and (min-width: 540px) {
             .topo {
-            display: flex;
-            justify-content: space-between;
-        }   
-        h1 { width: 60%}
-        .menu {
-            width: 40%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }                
+                display: flex;
+                justify-content: space-between;
+            }
+
+            h1 {
+                width: 60%
+            }
+
+            .menu {
+                width: 40%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
         }
 
         @media screen and (min-width: 690px) {
-            .conteudo{ 
+            .conteudo {
                 display: flex;
-                justify-content: space-between;
+                /* Habilitando a "quebra da linha" (row).
+                Ou seja, se não tiver mais espaça para encaixar lado a lado, acontecerá uma quebra (o elemento vai para a linha de baixo) */
                 flex-wrap: wrap;
-                gap: 3px; /*cria um espaço entre os itens*/
-            }     
-            .um {width: 69%;}
-            .dois {width: 30%;}
-            .tres {width: 100%;}           
-        }
+                justify-content: space-between;
+                /* Propriedade nova usada para espaçamentos entre elementos flex. Necessário ajustar largura e/ou altura dos elementos em que haverá espaçamento. */
+                /*gap: 3px; cria um espaço entre os itens internamente, não fora como a margin*/
+            }
 
+            .um {
+                width: 69%;
+            }
+
+            .dois {
+                width: 30%;
+            }
+
+            .tres {
+                width: 100%;
+                margin-top: 1%;
+            }
+        }
     </style>
 </head>
 
@@ -84,15 +137,21 @@
         <main class="conteudo">
             <article class="um">
                 <h2>Um</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ea deserunt, sed, excepturi perferendis eum, ut officia officiis labore molestiae tempore odio praesentium aliquid doloribus? Quos fuga laboriosam consequuntur commodi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ea deserunt, sed, excepturi
+                    perferendis eum, ut officia officiis labore molestiae tempore odio praesentium aliquid doloribus?
+                    Quos fuga laboriosam consequuntur commodi.</p>
             </article>
             <article class="dois">
                 <h2>Dois</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ea deserunt, sed, excepturi perferendis eum, ut officia officiis labore molestiae tempore odio praesentium aliquid doloribus? Quos fuga laboriosam consequuntur commodi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ea deserunt, sed, excepturi
+                    perferendis eum, ut officia officiis labore molestiae tempore odio praesentium aliquid doloribus?
+                    Quos fuga laboriosam consequuntur commodi.</p>
             </article>
             <article class="tres">
                 <h2>Três</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ea deserunt, sed, excepturi perferendis eum, ut officia officiis labore molestiae tempore odio praesentium aliquid doloribus? Quos fuga laboriosam consequuntur commodi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ea deserunt, sed, excepturi
+                    perferendis eum, ut officia officiis labore molestiae tempore odio praesentium aliquid doloribus?
+                    Quos fuga laboriosam consequuntur commodi.</p>
             </article>
         </main>
         <footer class="rodape">
