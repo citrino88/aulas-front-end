@@ -76,3 +76,9 @@ img {border-radius: 8px; }
 
 1. primeiro elemento da lista ordenada.
 2. segundo elemento.
+
+AULA DIA 26.03.2024
+
+- Variáveis no CSS
+- Unidades relativas (REM, VW, VH)
+- Importação de Fontes da Web (google fonts)
